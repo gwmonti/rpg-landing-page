@@ -1,0 +1,1475 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reignite Profitable Growth — Center for Managing Change</title>
+
+  <style>
+    /* ============================= */
+    /* BASE RESET                    */
+    /* ============================= */
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Helvetica, Arial, sans-serif;
+      color: #222;
+      line-height: 1.6;
+      background: #ffffff;
+    }
+
+    img { max-width: 100%; height: auto; display: block; }
+
+    a { color: inherit; }
+
+    /* ============================= */
+    /* HERO SECTION                  */
+    /* ============================= */
+    .hero {
+      background-color: #0E3A66;
+      color: #ffffff;
+      padding: 80px 20px;
+    }
+
+    .hero-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 260px 1fr;
+      gap: 32px;
+      align-items: start;
+    }
+
+    .hero-phoenix {
+      width: 220px;
+      justify-self: center;
+      margin-top: -22px;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      margin: 0 0 10px 0;
+      font-weight: 800;
+      letter-spacing: -0.2px;
+    }
+
+    .hero-tagline {
+      color: #D16936;
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .hero-description {
+      max-width: 700px;
+      font-size: 17px;
+      margin-bottom: 30px;
+      opacity: 0.95;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .btn-primary {
+      background-color: #D16936;
+      color: #ffffff;
+      padding: 14px 26px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 800;
+      display: inline-block;
+    }
+
+    .btn-secondary {
+      border: 2px solid #ffffff;
+      color: #ffffff;
+      padding: 14px 26px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 800;
+      display: inline-block;
+    }
+
+    .hero-note {
+      margin-top: 20px;
+      font-size: 15px;
+      opacity: 0.9;
+    }
+
+    @media (max-width: 768px) {
+      .hero-inner {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+      .hero-phoenix {
+        margin: 0 auto 18px auto;
+      }
+      .hero-buttons {
+        justify-content: center;
+        flex-direction: column;
+      }
+    }
+
+    /* ============================= */
+    /* WHAT RPG ACTUALLY FIXES       */
+    /* ============================= */
+    .fixes {
+      background-color: #f8fafc;
+      padding: 80px 20px;
+    }
+
+    .fixes-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .fixes h2 {
+      text-align: center;
+      font-size: 34px;
+      margin: 0 0 20px 0;
+      color: #0E3A66;
+      font-weight: 900;
+      letter-spacing: -0.2px;
+    }
+
+    .fixes-intro {
+      text-align: center;
+      max-width: 760px;
+      margin: 0 auto 50px auto;
+      font-size: 18px;
+      color: #444;
+    }
+
+    .fixes-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 32px;
+    }
+
+    .fix-item {
+      background-color: #f4f6f9;
+      padding: 30px 32px;
+      border-radius: 12px;
+    }
+
+    .fix-item h3 {
+      margin: 0 0 10px 0;
+      font-size: 20px;
+      color: #0E3A66;
+      font-weight: 900;
+    }
+
+    .fix-item p {
+      margin: 0;
+      font-size: 16px;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 768px) {
+      .fixes { padding: 60px 20px; }
+      .fixes-list { grid-template-columns: 1fr; }
+    }
+
+    /* ============================= */
+    /* WHAT YOU WILL GAIN            */
+    /* ============================= */
+    .gains {
+      background-color: #ffffff;
+      padding: 80px 20px;
+    }
+
+    .gains-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .gains h2 {
+      font-size: 34px;
+      margin: 0 0 20px 0;
+      text-align: center;
+      color: #0E3A66;
+      font-weight: 900;
+      letter-spacing: -0.2px;
+    }
+
+    .gains-intro {
+      max-width: 760px;
+      margin: 0 auto 50px auto;
+      font-size: 18px;
+      text-align: center;
+      color: #444;
+    }
+
+    .gains-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 36px 48px;
+    }
+
+    .gain-item h3 {
+      font-size: 20px;
+      margin: 0 0 8px 0;
+      color: #0E3A66;
+      font-weight: 900;
+    }
+
+    .gain-item p {
+      margin: 0;
+      font-size: 16px;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    @media (max-width: 768px) {
+      .gains { padding: 60px 20px; }
+      .gains-list { grid-template-columns: 1fr; gap: 28px; }
+    }
+
+    /* ============================= */
+    /* SECTION BREAK                 */
+    /* ============================= */
+    .section-break {
+      padding: 40px 20px 80px 20px;
+      background-color: #ffffff;
+    }
+
+    .section-break p {
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+      font-size: 20px;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    /* ============================= */
+    /* BUSINESS TRIAD™               */
+    /* ============================= */
+    .triad {
+      padding: 36px 20px 64px;
+      background-color: #ffffff;
+    }
+
+    .triad-inner {
+      max-width: 1000px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .triad h2 {
+      font-size: 34px;
+      margin: 0 0 10px 0;
+      color: #0E3A66;
+      font-weight: 900;
+      letter-spacing: -0.2px;
+    }
+
+    .triad-intro {
+      max-width: 760px;
+      margin: 0 auto 22px auto;
+      font-size: 17px;
+      color: #333;
+    }
+
+    .triad-image {
+      max-width: 720px;
+      margin: 0 auto 20px auto;
+    }
+
+    .triad-caption {
+      max-width: 820px;
+      margin: 0 auto;
+      font-size: 16px;
+      color: #0E3A66;
+      font-weight: 800;
+    }
+
+    @media (max-width: 768px) {
+      .triad { padding: 60px 20px; }
+      .triad h2 { font-size: 28px; }
+      .triad-intro, .triad-caption { font-size: 16px; }
+    }
+
+    /* ============================= */
+    /* INTEGRATED ADAPTIVE LEADERSHIP™ */
+    /* ============================= */
+    .ial {
+      padding: 36px 20px 48px;
+      background-color: #ffffff;
+    }
+
+    .ial-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .ial h2 {
+      font-size: 32px;
+      margin: 0 0 14px 0;
+      color: #0E3A66;
+      font-weight: 900;
+      letter-spacing: -0.2px;
+    }
+
+    .ial-intro {
+      max-width: 760px;
+      margin: 0 auto 28px auto;
+      font-size: 17px;
+      color: #333;
+    }
+
+    .ial-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 22px;
+      margin-bottom: 26px;
+      text-align: left;
+    }
+
+    .ial-card {
+      background-color: #f7f9fb;
+      padding: 22px;
+      border-radius: 10px;
+    }
+
+    .ial-card h3 {
+      margin: 0 0 8px 0;
+      font-size: 18px;
+      color: #0E3A66;
+      font-weight: 900;
+    }
+
+    .ial-card p {
+      margin: 0;
+      font-size: 15.5px;
+      color: #333;
+    }
+
+    .ial-caption {
+      max-width: 820px;
+      margin: 0 auto;
+      font-size: 15.5px;
+      font-weight: 800;
+      color: #0E3A66;
+    }
+
+    @media (max-width: 768px) {
+      .ial-grid { grid-template-columns: 1fr; }
+      .ial { padding: 44px 18px 52px; }
+    }
+
+    /* ============================= */
+    /* HOW RPG COMPARES              */
+    /* ============================= */
+    .comparison {
+      background-color: #f8fafc;
+      padding: 80px 20px;
+    }
+
+    .comparison-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .comparison h2 {
+      font-size: 34px;
+      margin: 0 0 14px 0;
+      color: #0E3A66;
+      font-weight: 900;
+      letter-spacing: -0.2px;
+    }
+
+    .comparison-intro {
+      max-width: 780px;
+      margin: 0 auto 36px auto;
+      font-size: 18px;
+      color: #444;
+    }
+
+    .comparison-tip {
+      max-width: 900px;
+      margin: 0 auto 18px auto;
+      font-size: 14px;
+      color: #666;
+      text-align: left;
+    }
+
+    .comparison-scroll {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      border-radius: 12px;
+      box-shadow: 0 10px 28px rgba(0,0,0,0.07);
+    }
+
+    .comparison-table {
+      width: 100%;
+      min-width: 980px; /* ensures the 5-column chart doesn’t crush */
+      border-collapse: collapse;
+      background: #ffffff;
+    }
+
+    .comparison-table th,
+    .comparison-table td {
+      padding: 16px 16px;
+      border: 1px solid #d9e2ec;
+      text-align: left;
+      font-size: 15.5px;
+      color: #222;
+      vertical-align: top;
+      line-height: 1.45;
+    }
+
+    .comparison-table thead th {
+      background: #0E3A66;
+      color: #ffffff;
+      font-weight: 900;
+      text-align: center;
+      font-size: 15px;
+    }
+
+    .comparison-table thead th:last-child {
+      background: #D16936;
+      color: #ffffff;
+    }
+
+    .comparison-table td:first-child {
+      font-weight: 900;
+      color: #0E3A66;
+      background: #f7f9fb;
+      width: 18%;
+    }
+
+    .comparison-table td:last-child {
+      background: #fff2ea;
+      font-weight: 800;
+      color: #222;
+    }
+
+    .comparison-caption {
+      max-width: 820px;
+      margin: 22px auto 0 auto;
+      font-size: 16px;
+      font-weight: 800;
+      color: #0E3A66;
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      .comparison { padding: 60px 20px; }
+      .comparison-tip { text-align: center; }
+    }
+
+    /* ============================= */
+    /* RPG SYSTEM (Curriculum + Syllabus) */
+    /* ============================= */
+    #rpg-system {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    #rpg-system * { font-family: inherit; }
+
+    #rpg-system .rpg-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+    }
+
+    @media (max-width: 850px) {
+      #rpg-system .rpg-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+    }
+
+    /* ============================= */
+    /* FAQ ACCORDION                 */
+    /* ============================= */
+    details > summary::-webkit-details-marker { display: none; }
+
+    /* ============================= */
+    /* TESTIMONIALS                  */
+    /* ============================= */
+    #testimonials, #testimonials * {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      box-sizing: border-box;
+    }
+
+    .rpg-testimonials {
+      max-width: 1100px;
+      margin: 80px auto;
+      padding: 0 20px;
+    }
+
+    .testimonials-title {
+      text-align: center;
+      font-size: 32px;
+      font-weight: 900;
+      color: #0E3A66;
+      margin: 0 0 50px 0;
+      letter-spacing: -0.2px;
+    }
+
+    .testimonial-card {
+      background: #ffffff;
+      border-left: 6px solid #D16936;
+      padding: 32px 36px;
+      margin-bottom: 40px;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    }
+
+    .pull-quote {
+      font-size: 22px;
+      font-weight: 900;
+      color: #0E3A66;
+      margin-bottom: 18px;
+      line-height: 1.4;
+    }
+
+    .testimonial-text {
+      font-size: 18px;
+      color: #333;
+      line-height: 1.6;
+      margin: 0 0 16px 0;
+    }
+
+    .testimonial-author {
+      font-size: 15px;
+      font-weight: 900;
+      color: #0E3A66;
+      margin: 0;
+    }
+
+    @media (max-width: 768px) {
+      .testimonials-title { font-size: 26px; margin-bottom: 40px; }
+      .testimonial-card { padding: 24px 26px; border-left-width: 4px; margin-bottom: 32px; }
+      .pull-quote { font-size: 20px; }
+      .testimonial-text { font-size: 16px; }
+      .testimonial-author { font-size: 14px; }
+    }
+
+    /* =============================== */
+    /* FOOTER — CMC (Evergreen)        */
+    /* =============================== */
+    footer.cmc-footer {
+      background-color: #0E3A66;
+      padding: 40px 20px;
+      color: #FFFFFF;
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      text-align: center;
+    }
+
+    footer.cmc-footer a {
+      color: #FFFFFF;
+      text-decoration: none;
+    }
+
+    footer.cmc-footer a:hover {
+      text-decoration: underline;
+    }
+
+    .footer-links {
+      margin-bottom: 20px;
+      font-size: 14px;
+      line-height: 1.8;
+      opacity: 0.95;
+    }
+
+    .footer-copy {
+      font-size: 13px;
+      opacity: 0.75;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ============================= -->
+  <!-- HERO                          -->
+  <!-- ============================= -->
+  <section class="hero">
+    <div class="hero-inner">
+
+      <img
+        src="https://raw.githubusercontent.com/gwmonti/rpg-landing/main/images/colorizedphoenixtransparent-350x230.png"
+        alt="Phoenix Logo"
+        class="hero-phoenix"
+      >
+
+      <div>
+        <h1>Reignite Profitable Growth</h1>
+
+        <div class="hero-tagline">
+          Get Focused. Get On Track. Get More Profitable Growth.
+        </div>
+
+        <p class="hero-description">
+          A 12-week system to help business owners and leaders regain clarity,
+          stabilize operations, and build a profit-generating engine that holds
+          up under real-world pressure.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="https://courses.centerformanagingchange.com/reignite-profitable-growth/" class="btn-primary">
+            Join RPG Now
+          </a>
+
+          <a href="https://koalendar.com/e/meet-with-gary-RPG" class="btn-secondary" target="_blank" rel="noopener">
+            Book a Short Clarity Call
+          </a>
+        </div>
+
+        <div class="hero-note">
+          Founder’s Round has one-time, reduced pricing
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================= -->
+  <!-- WHAT RPG ACTUALLY FIXES       -->
+  <!-- ============================= -->
+  <section class="fixes">
+    <div class="fixes-inner">
+
+      <h2>What RPG Actually Fixes</h2>
+
+      <p class="fixes-intro">
+        Most leaders don’t suffer from a lack of intelligence, effort, or ambition.
+        They suffer from systems that no longer fit the reality they’re operating in.
+      </p>
+
+      <div class="fixes-list">
+        <div class="fix-item">
+          <h3>Chronic Reactivity</h3>
+          <p>
+            When everything feels urgent, nothing gets properly addressed.
+            RPG replaces constant firefighting with deliberate, priority-driven action.
+          </p>
+        </div>
+
+        <div class="fix-item">
+          <h3>Diffuse Accountability</h3>
+          <p>
+            Work gets done, but ownership is unclear — and the same problems resurface.
+            RPG restores clarity around roles, decisions, and follow-through.
+          </p>
+        </div>
+
+        <div class="fix-item">
+          <h3>Strategic Drift</h3>
+          <p>
+            You’re busy, but not moving in a coherent direction.
+            RPG reconnects day-to-day activity with an explicit, testable strategy.
+          </p>
+        </div>
+
+        <div class="fix-item">
+          <h3>People &amp; Politics Friction</h3>
+          <p>
+            Resistance, misalignment, and unspoken tension quietly tax performance.
+            RPG surfaces and works with these dynamics instead of pretending they don’t exist.
+          </p>
+        </div>
+
+        <div class="fix-item">
+          <h3>Invisible Profit Leakage</h3>
+          <p>
+            Margins erode not through catastrophe, but through small, unmanaged decisions.
+            RPG helps you identify where profit is being lost — and why.
+          </p>
+        </div>
+
+        <div class="fix-item">
+          <h3>Decision Fatigue at the Top</h3>
+          <p>
+            When everything routes back to you, progress slows and exhaustion rises.
+            RPG builds structures that let good decisions happen without your constant intervention.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================= -->
+  <!-- WHAT YOU WILL GAIN            -->
+  <!-- ============================= -->
+  <section class="gains">
+    <div class="gains-inner">
+
+      <h2>What You Will Gain</h2>
+
+      <p class="gains-intro">
+        RPG doesn’t promise transformation through inspiration.
+        It delivers change through structure, practice, and disciplined execution.
+      </p>
+
+      <div class="gains-list">
+        <div class="gain-item">
+          <h3>Strategic Clarity Under Pressure</h3>
+          <p>
+            You’ll know what matters, what doesn’t, and why — even when conditions
+            are changing and information is incomplete.
+          </p>
+        </div>
+
+        <div class="gain-item">
+          <h3>Decisions That Hold Up</h3>
+          <p>
+            Decisions stop unraveling downstream because they’re made within a
+            coherent system, not in isolation.
+          </p>
+        </div>
+
+        <div class="gain-item">
+          <h3>Reduced Load on You</h3>
+          <p>
+            As structures strengthen, fewer issues need to route through you.
+            The organization begins to carry more of its own weight.
+          </p>
+        </div>
+
+        <div class="gain-item">
+          <h3>Teams That Pull in the Same Direction</h3>
+          <p>
+            Alignment becomes observable in how work gets done — not just in
+            language or intentions.
+          </p>
+        </div>
+
+        <div class="gain-item">
+          <h3>Visibility Into Profit Drivers</h3>
+          <p>
+            You’ll be able to see where value is created, where it leaks, and
+            which levers actually move results.
+          </p>
+        </div>
+
+        <div class="gain-item">
+          <h3>Momentum You Can Sustain</h3>
+          <p>
+            Progress becomes something you can maintain — not a burst of effort
+            followed by regression.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================= -->
+  <!-- SECTION BREAK — OPERATING LOGIC -->
+  <!-- ============================= -->
+  <section class="section-break">
+    <p>
+      This isn’t about working harder or adopting someone else’s playbook.
+      It’s about rebuilding the operating logic of your business so it can grow
+      without breaking you.
+    </p>
+  </section>
+
+  <!-- ============================= -->
+  <!-- BUSINESS TRIAD™               -->
+  <!-- ============================= -->
+  <section class="triad">
+    <div class="triad-inner">
+
+      <h2>The Business Triad™</h2>
+
+      <p class="triad-intro">
+        Sustainable growth doesn’t come from fixing one dimension of the business
+        in isolation. It comes from aligning how the business is designed,
+        how work is executed, and how people actually behave under pressure.
+      </p>
+
+      <div class="triad-image">
+        <img
+          src="https://raw.githubusercontent.com/gwmonti/rpg-landing/main/images/business-triad.png"
+          alt="The Business Triad: Business Plan/Operations, Project Management, People &amp; Politics"
+        >
+      </div>
+
+      <p class="triad-caption">
+        The Business Triad™ gives leaders a clear system.
+        Integrated Adaptive Leadership™ ensures they can actually execute it —
+        especially when things get hard.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- ============================= -->
+  <!-- INTEGRATED ADAPTIVE LEADERSHIP™ -->
+  <!-- ============================= -->
+  <section class="ial">
+    <div class="ial-inner">
+
+      <h2>Integrated Adaptive Leadership™</h2>
+
+      <p class="ial-intro">
+        The Business Triad™ defines what must be aligned.
+        Integrated Adaptive Leadership™ is how leaders actually do the work — in real time,
+        under pressure, with incomplete information.
+      </p>
+
+      <div class="ial-grid">
+        <div class="ial-card">
+          <h3>Lead Through Complexity</h3>
+          <p>
+            Learn to distinguish what is stable, what is shifting, and what cannot be controlled —
+            so effort goes where it actually matters.
+          </p>
+        </div>
+
+        <div class="ial-card">
+          <h3>Act Without Overreacting</h3>
+          <p>
+            Replace urgency and reactivity with disciplined judgment,
+            even when the stakes are high.
+          </p>
+        </div>
+
+        <div class="ial-card">
+          <h3>Align People and Execution</h3>
+          <p>
+            Navigate personalities, incentives, and power dynamics
+            without losing momentum or credibility.
+          </p>
+        </div>
+
+        <div class="ial-card">
+          <h3>Adapt Without Thrashing</h3>
+          <p>
+            Make course corrections deliberately — without burning trust,
+            energy, or strategic coherence.
+          </p>
+        </div>
+      </div>
+
+      <p class="ial-caption">
+        Integrated Adaptive Leadership™ turns insight into action —
+        so strategy survives contact with reality.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- ============================= -->
+  <!-- HOW RPG COMPARES              -->
+  <!-- ============================= -->
+  <section class="comparison">
+    <div class="comparison-inner">
+
+      <h2>How RPG Compares</h2>
+
+      <p class="comparison-intro">
+        After decades of using traditional consulting, coaching, mindset work, and execution
+        frameworks — as well as having clients work in conjunction with a clinical therapist —
+        Gary found that each helped but none could separately handle the full reality of leading through
+        complex situations.
+        <br><br>
+        So he built an integrated system that fills the gaps and delivers what leaders actually need:
+        clarity, stability, and the ability to create a profit-generating engine they can run with confidence.
+      </p>
+
+      <div class="comparison-tip">
+        Tip: On mobile, rotate your phone to landscape for the full comparison.
+      </div>
+
+      <div class="comparison-scroll">
+        <table class="comparison-table" aria-label="RPG Comparison Chart">
+          <thead>
+            <tr>
+              <th>Category</th>
+              <th>Traditional Consulting</th>
+              <th>Mindset / Coaching</th>
+              <th>Execution Frameworks</th>
+              <th>RPG (Business Triad™ + IAL™)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Handles Complexity</td>
+              <td>Partial</td>
+              <td>Low</td>
+              <td>Moderate</td>
+              <td>High — designed for complex environments</td>
+            </tr>
+            <tr>
+              <td>Team Alignment</td>
+              <td>Variable</td>
+              <td>Not addressed</td>
+              <td>Medium</td>
+              <td>Strong — built into the process</td>
+            </tr>
+            <tr>
+              <td>Emotional Reactivity</td>
+              <td>Not addressed</td>
+              <td>Partial</td>
+              <td>Not addressed</td>
+              <td>Core element of IAL™</td>
+            </tr>
+            <tr>
+              <td>Repeatable System</td>
+              <td>No</td>
+              <td>Low</td>
+              <td>High</td>
+              <td>High — weekly cadence + tools</td>
+            </tr>
+            <tr>
+              <td>Profit-Generating Engine</td>
+              <td>Unpredictable</td>
+              <td>Not addressed</td>
+              <td>Indirect</td>
+              <td>Explicit and measurable</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="comparison-caption">
+        RPG is not “one more framework.” It is an integrated operating system for leaders who need traction under real-world pressure.
+      </div>
+
+    </div>
+    <div style="margin-top:32px; text-align:center;">
+  <a href="https://courses.centerformanagingchange.com/reignite-profitable-growth/"
+     class="btn-primary"
+     style="font-size:18px; padding:16px 30px;">
+    Join Reignite Profitable Growth
+  </a>
+</div>
+
+  </section>
+
+  <!-- ============================= -->
+  <!--   BLOCK — RPG SYSTEM          -->
+  <!-- ============================= -->
+  <section id="rpg-system">
+
+    <h2 style="text-align:center; font-size:34px; color:#0E3A66; margin:0 0 15px 0; font-weight:900;">
+      What’s Inside the RPG System
+    </h2>
+
+    <p style="text-align:center; font-size:17px; color:#444; max-width:750px; margin:0 auto 10px auto; line-height:1.55;">
+      RPG integrates structured business planning with leadership practice under real-world pressure. You will learn the
+      <strong>strategic foundation</strong> that stabilizes your operations and the
+      <strong>execution cadence</strong> that moves your business forward week after week.
+    </p>
+
+    <p style="text-align:center; font-size:18px; color:#0E3A66; font-weight:800; margin-top:6px; margin-bottom:40px;">
+      How to Build Your Profit-Generating Engine
+    </p>
+    <!-- ===================================== -->
+<!-- HOT SEAT — GOVERNANCE EXPLANATION     -->
+<!-- ===================================== -->
+<div style="
+  max-width:820px;
+  margin:0 auto 46px auto;
+  text-align:center;
+">
+
+  <p style="
+    font-size:18px;
+    font-weight:900;
+    color:#D16936;
+    margin:0 0 12px 0;
+  ">
+    It’s all about getting the job done.
+  </p>
+
+  <p style="
+    font-size:16px;
+    line-height:1.65;
+    color:#333;
+    margin:0;
+  ">
+    Throughout RPG, participants regularly step into the <strong style="color:#D16936;">Hot Seat</strong> —
+    a structured forum where real decisions, real constraints, and real tradeoffs are examined in real time.
+    <br><br>
+    This is not presentation for approval. It is disciplined exposure of thinking, assumptions, and plans
+    so weak logic, political blind spots, and execution risks surface <em>before</em> they become expensive.
+  </p>
+
+</div>
+
+
+    <div class="rpg-grid">
+
+      <!-- LEFT -->
+      <div>
+        <h3 style="color:#D16936; margin:0; font-size:20px; text-transform:uppercase; font-weight:900;">
+          Curriculum
+        </h3>
+        <p style="margin:2px 0 18px 0; color:#666; font-size:14px;">
+          (Strategic Foundation)
+        </p>
+
+        <div style="background:#F7F9FC; border-radius:12px; padding:20px 22px; margin-bottom:22px;">
+          <h4 style="color:#0E3A66; margin:0 0 8px 0; font-size:18px; font-weight:900;">
+            Know Yourself, See Your People, Understand Complexity
+          </h4>
+          <p style="margin:0 0 8px 0; color:#666; font-size:14px;">(Weeks 1–3)</p>
+          <p style="margin:0; color:#444; font-size:15px;">
+            Build clarity about your leadership stance, operating environment, and stakeholder dynamics before misalignment turns into cost, friction, or stalled decisions.
+          </p>
+        </div>
+
+        <div style="background:#F7F9FC; border-radius:12px; padding:20px 22px; margin-bottom:22px;">
+          <h4 style="color:#0E3A66; margin:0 0 8px 0; font-size:18px; font-weight:900;">
+            Survey the Landscape &amp; Shape the Solution
+          </h4>
+          <p style="margin:0 0 8px 0; color:#666; font-size:14px;">(Weeks 4–6)</p>
+          <p style="margin:0; color:#444; font-size:15px;">
+            Diagnose drift, surface constraints, and frame the actual problem — not the version that's politically convenient or historically familiar.
+          </p>
+        </div>
+
+        <div style="background:#F7F9FC; border-radius:12px; padding:20px 22px; margin-bottom:22px;">
+          <h4 style="color:#0E3A66; margin:0 0 8px 0; font-size:18px; font-weight:900;">
+            Finalize Your Guiding Document &amp; Identify Risks
+          </h4>
+          <p style="margin:0 0 8px 0; color:#666; font-size:14px;">(Weeks 7–9)</p>
+          <p style="margin:0; color:#444; font-size:15px;">
+            Develop your Business Requirements Document (BRD), identify material risks, and prepare to defend your recommendations before others weaponize them against you.
+          </p>
+        </div>
+
+        <div style="background:#F7F9FC; border-radius:12px; padding:20px 22px;">
+          <h4 style="color:#0E3A66; margin:0 0 8px 0; font-size:18px; font-weight:900;">
+            Build &amp; Defend Your Implementation Plan
+          </h4>
+          <p style="margin:0 0 8px 0; color:#666; font-size:14px;">(Weeks 10–12)</p>
+          <p style="margin:0; color:#444; font-size:15px;">
+            Translate strategy into coordinated, survivable action — with clear ownership, sequencing, and decision rules when pressure hits.
+          </p>
+        </div>
+      </div>
+
+      <!-- RIGHT -->
+      <div>
+        <h3 style="color:#D16936; margin:0; font-size:20px; text-transform:uppercase; font-weight:900;">
+          Guided Syllabus
+        </h3>
+        <p style="margin:2px 0 18px 0; color:#666; font-size:14px;">
+          (Execution Cadence)
+        </p>
+
+        <div style="margin-bottom:28px;">
+          <h4 style="color:#0E3A66; font-size:19px; margin:0 0 10px 0; font-weight:900;">Weeks 1–3</h4>
+          <p><strong>Week 1 — Understand Yourself</strong><br>Assess your leadership stance &amp; internal drivers.</p>
+          <p><strong>Week 2 — See Your Situation</strong><br>Clarify the complexity you operate within.</p>
+          <p><strong>Week 3 — Know Your People</strong><br>Identify behavioral patterns &amp; stakeholder dynamics.</p>
+        </div>
+
+        <div style="margin-bottom:28px;">
+          <h4 style="color:#0E3A66; font-size:19px; margin:0 0 10px 0; font-weight:900;">Weeks 4–6</h4>
+
+          <p>
+            <span style="background:#D16936; color:#fff; padding:4px 10px; border-radius:6px; font-size:13px; margin-right:6px; font-weight:900;">Hot Seat</span>
+            <strong>Week 4 — Put a First Frame on the Problem</strong><br>
+            Comprehensive framing of the business problem.
+          </p>
+
+          <p><strong>Week 5 — Generate Real Alternatives</strong><br>Generate multiple viable paths forward.</p>
+          <p><strong>Week 6 — Generate Viable Options</strong><br>Filter through complexity &amp; refine your direction.</p>
+        </div>
+
+        <div style="margin-bottom:28px;">
+          <h4 style="color:#0E3A66; font-size:19px; margin:0 0 10px 0; font-weight:900;">Weeks 7–9</h4>
+
+          <p>
+            <span style="background:#D16936; color:#fff; padding:4px 10px; border-radius:6px; font-size:13px; margin-right:6px; font-weight:900;">Hot Seat</span>
+            <strong>Week 7 — Politics &amp; Risk Mapping</strong><br>
+            Map unseen forces &amp; stakeholder constraints.
+          </p>
+
+          <p><strong>Week 8 — The Good, The Bad, and The Ugly</strong><br>Refine your guiding document into a solid draft.</p>
+
+          <p>
+            <span style="background:#D16936; color:#fff; padding:4px 10px; border-radius:6px; font-size:13px; margin-right:6px; font-weight:900;">Hot Seat</span>
+            <strong>Week 9 — Defend Your Business Requirements Document (BRD)</strong><br>
+            Pressure-test your plan in a supportive cohort setting.
+          </p>
+        </div>
+
+        <div>
+          <h4 style="color:#0E3A66; font-size:19px; margin:0 0 10px 0; font-weight:900;">Weeks 10–12</h4>
+
+          <p><strong>Week 10 — Boots On The Ground</strong><br>Prepare for real-world rollout.</p>
+
+          <p>
+            <span style="background:#D16936; color:#fff; padding:4px 10px; border-radius:6px; font-size:13px; margin-right:6px; font-weight:900;">Hot Seat</span>
+            <strong>Week 11 — Introduce Your Plan</strong><br>
+            Test delivery, messaging, &amp; reception.
+          </p>
+
+          <p>
+            <span style="background:#D16936; color:#fff; padding:4px 10px; border-radius:6px; font-size:13px; margin-right:6px; font-weight:900;">Hot Seat</span>
+            <strong>Week 12 — Defend Your Plan</strong><br>
+            Strengthen your justification &amp; resolve final obstacles.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  <!-- ============================= -->
+<!-- CTA — AFTER RPG SYSTEM       -->
+<!-- ============================= -->
+<section style="background:#ffffff; padding:60px 20px; text-align:center;">
+  <div style="max-width:900px; margin:0 auto;">
+
+    <p style="
+      font-size:20px;
+      font-weight:800;
+      color:#0E3A66;
+      margin:0 0 24px 0;
+    ">
+      If this system matches how you think and operate, the next step is straightforward.
+    </p>
+
+    <a
+      href="https://courses.centerformanagingchange.com/reignite-profitable-growth/"
+      class="btn-primary"
+      style="font-size:18px; padding:16px 34px;"
+    >
+      Join Reignite Profitable Growth
+    </a>
+
+  </div>
+</section>
+
+
+  <!-- ===================================== -->
+  <!-- FAQ SECTION (RPG LANDING)             -->
+  <!-- ===================================== -->
+  <section style="background:#ffffff; padding:40px 20px; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;">
+    <div style="max-width:900px; margin:0 auto;">
+
+      <h2 style="margin:0 0 10px 0; font-size:30px; color:#0E3A66; font-weight:900; text-align:center;">
+        Frequently Asked Questions
+      </h2>
+      <p style="margin:0 auto 26px auto; max-width:760px; font-size:16px; color:#222; text-align:center;">
+        These are the questions business owners and leaders ask before deciding to move forward.
+      </p>
+
+      <div style="border:1px solid #e6e6e6; border-radius:14px; overflow:hidden; box-shadow:0 6px 18px rgba(0,0,0,0.06);">
+
+        <details style="border-bottom:1px solid #e9e9e9;">
+          <summary style="list-style:none; cursor:pointer; padding:18px; background:#f8f9fb; display:flex; gap:12px; align-items:flex-start;">
+            <span style="width:26px; height:26px; border-radius:50%; background:#0E3A66; color:#fff; display:flex; align-items:center; justify-content:center; font-weight:900;">?</span>
+            <span style="font-size:18px; font-weight:900; color:#0E3A66;">
+              Is RPG a “soft” leadership program—or a business execution system?
+            </span>
+          </summary>
+          <div style="padding:0 18px 18px 56px;">
+            <p style="font-size:16px; line-height:1.65; color:#222; margin:0;">
+              RPG is a business execution system. Leadership is addressed only where it directly affects
+              decision-making, execution, and results. The goal is measurable traction—clear priorities,
+              reduced waste, stronger coordination, and sustained profitability.
+            </p>
+            <a href="https://koalendar.com/e/meet-with-gary-RPG" target="_blank" rel="noopener"
+               style="display:inline-block; margin-top:14px; background:#D16936; color:#fff; padding:10px 14px; border-radius:10px; font-weight:900; text-decoration:none;">
+              Book a Short Clarity Call with Gary
+            </a>
+          </div>
+        </details>
+
+        <details style="border-bottom:1px solid #e9e9e9;">
+          <summary style="list-style:none; cursor:pointer; padding:18px; display:flex; gap:12px; align-items:flex-start;">
+            <span style="width:26px; height:26px; border-radius:50%; background:#0E3A66; color:#fff; display:flex; align-items:center; justify-content:center; font-weight:900;">?</span>
+            <span style="font-size:18px; font-weight:900; color:#0E3A66;">
+              Is RPG for me if my company is small—or if I have many employees?
+            </span>
+          </summary>
+          <div style="padding:0 18px 18px 56px;">
+            <p style="font-size:16px; line-height:1.65; color:#222; margin:0;">
+              Company size isn’t the determining factor. RPG addresses the patterns that stall growth—
+              unclear priorities, reactive execution, and misalignment between people and work.
+            </p>
+            <a href="https://koalendar.com/e/meet-with-gary-RPG" target="_blank" rel="noopener"
+               style="display:inline-block; margin-top:14px; background:#D16936; color:#fff; padding:10px 14px; border-radius:10px; font-weight:900; text-decoration:none;">
+              Book a Short Clarity Call with Gary
+            </a>
+          </div>
+        </details>
+
+        <details style="border-bottom:1px solid #e9e9e9;">
+          <summary style="list-style:none; cursor:pointer; padding:18px; background:#f8f9fb; display:flex; gap:12px; align-items:flex-start;">
+            <span style="width:26px; height:26px; border-radius:50%; background:#0E3A66; color:#fff; display:flex; align-items:center; justify-content:center; font-weight:900;">?</span>
+            <span style="font-size:18px; font-weight:900; color:#0E3A66;">
+              What if my business challenges are messy and interconnected?
+            </span>
+          </summary>
+          <div style="padding:0 18px 18px 56px;">
+            <p style="font-size:16px; line-height:1.65; color:#222; margin:0;">
+              RPG is designed for real-world complexity. Instead of oversimplifying, we help you
+              create traction inside the constraints and tradeoffs you’re actually facing.
+            </p>
+            <a href="https://koalendar.com/e/meet-with-gary-RPG" target="_blank" rel="noopener"
+               style="display:inline-block; margin-top:14px; background:#D16936; color:#fff; padding:10px 14px; border-radius:10px; font-weight:900; text-decoration:none;">
+              Book a Short Clarity Call with Gary
+            </a>
+          </div>
+        </details>
+
+        <details style="border-bottom:1px solid #e9e9e9;">
+          <summary style="list-style:none; cursor:pointer; padding:18px; display:flex; gap:12px; align-items:flex-start;">
+            <span style="width:26px; height:26px; border-radius:50%; background:#0E3A66; color:#fff; display:flex; align-items:center; justify-content:center; font-weight:900;">?</span>
+            <span style="font-size:18px; font-weight:900; color:#0E3A66;">
+              I’m already stretched thin—how much time does RPG really require?
+            </span>
+          </summary>
+          <div style="padding:0 18px 18px 56px;">
+            <p style="font-size:16px; line-height:1.65; color:#222; margin:0;">
+              RPG is designed to reduce noise, not add more. Most leaders recover time quickly by
+              eliminating false starts, rework, and reactive decision-making.
+            </p>
+            <a href="https://koalendar.com/e/meet-with-gary-RPG" target="_blank" rel="noopener"
+               style="display:inline-block; margin-top:14px; background:#D16936; color:#fff; padding:10px 14px; border-radius:10px; font-weight:900; text-decoration:none;">
+              Book a Short Clarity Call with Gary
+            </a>
+          </div>
+        </details>
+
+        <details>
+          <summary style="list-style:none; cursor:pointer; padding:18px; background:#f8f9fb; display:flex; gap:12px; align-items:flex-start;">
+            <span style="width:26px; height:26px; border-radius:50%; background:#0E3A66; color:#fff; display:flex; align-items:center; justify-content:center; font-weight:900;">?</span>
+            <span style="font-size:18px; font-weight:900; color:#0E3A66;">
+              How do I know if RPG is the right next step?
+            </span>
+          </summary>
+          <div style="padding:0 18px 18px 56px;">
+            <p style="font-size:16px; line-height:1.65; color:#222; margin:0;">
+              If progress feels harder than it should, a short clarity call will help you decide.
+              You’ll leave with a clearer picture of fit—no pressure.
+            </p>
+            <a href="https://koalendar.com/e/meet-with-gary-RPG" target="_blank" rel="noopener"
+               style="display:inline-block; margin-top:14px; background:#D16936; color:#fff; padding:10px 14px; border-radius:10px; font-weight:900; text-decoration:none;">
+              Book a Short Clarity Call with Gary
+            </a>
+          </div>
+        </details>
+
+      </div>
+
+    </div>
+  </section>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const faqItems = document.querySelectorAll("section details");
+      faqItems.forEach((item) => {
+        item.addEventListener("toggle", () => {
+          if (item.open) {
+            faqItems.forEach((other) => {
+              if (other !== item) other.removeAttribute("open");
+            });
+          }
+        });
+      });
+    });
+  </script>
+
+  <!-- =============================================== -->
+  <!--  TESTIMONIALS (Pull Quote Style)                -->
+  <!-- =============================================== -->
+  <section id="testimonials" class="rpg-testimonials">
+    <h2 class="testimonials-title">What Business Leaders Say About Working With Gary</h2>
+
+    <div class="testimonial-card">
+      <div class="pull-quote">Gary provided tools and ideas I still use today.</div>
+      <p class="testimonial-text">
+        Gary helped us quantify and assess situations in a way that improved risk management
+        and clarified the real reliability of our teams and projects. His tools and insights
+        continue to guide our decision-making today.
+      </p>
+      <p class="testimonial-author">– B.G., Executive VP, Environmental Engineering</p>
+    </div>
+
+    <div class="testimonial-card">
+      <div class="pull-quote">We unpacked decades of cultural baggage.</div>
+      <p class="testimonial-text">
+        Through Gary's guidance we unpacked decades of cultural baggage, built a clear matrix of
+        future possibilities, and identified the right direction for our company, clients, and
+        owners. His process brought clarity where we had long struggled.
+      </p>
+      <p class="testimonial-author">– Phil M., President, Insurance Group</p>
+    </div>
+  </section>
+
+<!-- ===================================== -->
+<!-- BIO & PHOTO                           -->
+<!-- ===================================== -->
+<section style="background:#f7f8fa; padding:60px 20px; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;">
+  <div style="
+    max-width:1000px;
+    margin:0 auto;
+    display:flex;
+    gap:40px;
+    align-items:flex-start;
+    flex-wrap:wrap;
+  ">
+
+    <!-- PHOTO -->
+    <div style="
+      flex:0 0 220px;
+      text-align:center;
+    ">
+<img
+  src="https://raw.githubusercontent.com/gwmonti/cmc-public-images/main/gary-monti-portrait.jpg"
+  alt="Gary Monti"
+  style="
+    width:220px;
+    max-width:100%;
+    height:auto;
+    border-radius:16px;
+  "
+/>
+
+</div>
+
+<!-- BIO TEXT -->
+<div style="
+  flex:1 1 520px;
+">
+      <h3 style="
+        margin:0 0 12px 0;
+        font-size:26px;
+
+        font-weight:900;
+      ">
+        Gary Monti
+      </h3>
+
+      <p style="margin:0 0 14px 0; font-size:16px; line-height:1.65; color:#222;">
+        Gary is the founder of the Center for Managing Change and has spent more than
+        25 years helping business owners and leadership teams navigate growth,
+        complexity, and execution challenges—especially when momentum stalls and
+        decisions get harder.
+      </p>
+
+      <p style="margin:0 0 14px 0; font-size:16px; line-height:1.65; color:#222;">
+        His work integrates practical business execution, project and risk management,
+        and leadership decision-making—particularly in environments where simple
+        answers and one-size-fits-all frameworks no longer work.
+      </p>
+
+      <p style="margin:0; font-size:16px; line-height:1.65; color:#222;">
+        <strong>Reignite Profitable Growth</strong> distills this experience into a
+        focused, disciplined system designed to help leaders regain traction,
+        align their teams, and move forward with confidence.
+      </p>
+
+      <div style="margin-top:28px;">
+        <a
+          href="https://koalendar.com/e/meet-with-gary-RPG"
+          target="_blank"
+          rel="noopener"
+          style="
+            display:inline-block;
+            background:#0E3A66;
+            color:#ffffff;
+            text-decoration:none;
+            padding:16px 22px;
+            border-radius:14px;
+            font-weight:900;
+            font-size:16px;
+          "
+        >
+          Have a question about fit? Book a Short Clarity Call
+
+        </a>
+
+<div style="margin-top:10px; font-size:13px; color:#555;">
+  A brief conversation to talk through your situation and see whether RPG makes sense.
+</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- ================================ -->
+<!-- CTA — POST-FAQ CLARITY CALL -->
+<!-- ================================ -->
+
+<section style="background:#ffffff; padding:60px 20px 80px; text-align:center;">
+  <div style="max-width:900px; margin:0 auto;">
+
+    <p style="
+      font-size:20px;
+      font-weight:900;
+      color:#0E3A66;
+      margin:0 0 12px 0;
+    ">
+      Still thinking about it?
+    </p>
+
+    <p style="
+      font-size:16px;
+      line-height:1.6;
+      color:#333;
+      max-width:760px;
+      margin:0 auto 28px auto;
+    ">
+      If your situation includes political constraints, competing priorities, or edge-case complexity,
+      a short conversation can help determine whether RPG is the right fit before you commit
+      time, money, or organizational attention.
+    </p>
+
+    <a
+      href="https://YOUR-KOALENDAR-LINK-HERE"
+      class="btn-primary"
+      style="
+        font-size:17px;
+        padding:14px 30px;
+        display:inline-block;
+        text-decoration:none;
+      "
+    >
+      Book a Short Clarity Call
+    </a>
+
+  </div>
+</section>
+
+  <!-- =============================== -->
+  <!--  FOOTER — CMC (Evergreen)       -->
+  <!-- =============================== -->
+  <footer class="cmc-footer">
+    <div class="footer-links">
+      <a href="https://www.dropbox.com/scl/fi/crj0ryqebrz0u257n4ale/Terms-and-Conditions.pdf?rlkey=04tdls5jmpo439bpasr85f5nz&dl=1" target="_blank" rel="noopener">Terms &amp; Conditions</a>
+      &nbsp;|&nbsp;
+      <a href="https://www.dropbox.com/scl/fi/c0g7z0ao8zrbnf8obcg2f/Privacy-Policy.pdf?rlkey=abfs6dzl7hn2qmtcqrdpbb6hk&dl=1" target="_blank" rel="noopener">Privacy Policy</a>
+      &nbsp;|&nbsp;
+      <a href="https://www.dropbox.com/scl/fi/27jffk39t2x498jakic5x/Refund-and-Satisfaction-Guarantee-Policy.pdf?rlkey=86qqbqm8qkohkw6ui6ozsqhol&dl=1" target="_blank" rel="noopener">Refund Policy</a>
+      &nbsp;|&nbsp;
+      <a href="https://www.dropbox.com/scl/fi/zneia1jdb0tei9xqubbly/Disclaimer.pdf?rlkey=faiqudo6d1elvvhb1ynyj9e9o&dl=1" target="_blank" rel="noopener">Disclaimer</a>
+    </div>
+
+    <div class="footer-copy">
+      © <span id="footer-year"></span> Center for Managing Change. All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("footer-year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
