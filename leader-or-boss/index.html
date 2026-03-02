@@ -6,6 +6,8 @@
 <title>Are You A Leader or A Boss? | Center for Managing Change</title>
 
 <style>
+/* ===== Base ===== */
+
 body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
@@ -13,34 +15,48 @@ body {
     color: #1e2a38;
     line-height: 1.6;
 }
+
+/* ===== Banner ===== */
+
+.banner {
+    text-align: center;
+    padding: 20px 0 10px 0;
+}
+
 .banner img {
     width: 100%;
+    max-width: 760px;   /* aligns with content width */
     height: auto;
-    max-height: 180px;
     display: block;
+    margin: 0 auto;
 }
-    .container {
+
+/* ===== Content Container ===== */
+
+.container {
     max-width: 760px;
-    margin: 70px auto;
+    margin: 50px auto 70px auto;
     padding: 0 20px;
 }
 
+/* ===== Typography ===== */
+
 h1 {
-    font-size: 40px;
+    font-size: 38px;
     font-weight: 500;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 .subtitle {
-    font-size: 16px;
+    font-size: 15px;
     color: #666666;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 h2 {
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 500;
-    margin-top: 45px;
+    margin-top: 40px;
     margin-bottom: 12px;
 }
 
@@ -50,11 +66,14 @@ p {
 
 ul {
     padding-left: 22px;
+    margin-bottom: 25px;
 }
 
+/* ===== CTA Section ===== */
+
 .cta-section {
-    margin-top: 70px;
-    padding-top: 40px;
+    margin-top: 60px;
+    padding-top: 35px;
     border-top: 1px solid #e5e5e5;
     text-align: center;
 }
@@ -63,22 +82,17 @@ ul {
     background-color: #D16936;
     color: #ffffff;
     text-decoration: none;
-    padding: 18px 44px;
+    padding: 16px 40px;
     font-size: 18px;
     border-radius: 4px;
     display: inline-block;
     margin-top: 20px;
     font-weight: 500;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.25s ease;
 }
 
 .cta-button:hover {
     background-color: #b5552a;
-}
-
-.cta-button:visited,
-.cta-button:active {
-    color: #ffffff;
 }
 
 .small-text {
@@ -87,18 +101,21 @@ ul {
     color: #777777;
 }
 
+/* ===== Footer ===== */
+
 .footer {
     text-align: center;
-    padding: 50px 20px;
-    font-size: 14px;
+    padding: 40px 20px;
+    font-size: 13px;
     color: #999999;
+    border-top: 1px solid #f0f0f0;
 }
 </style>
 </head>
 
 <body>
 
-<!-- CMC Banner -->
+<!-- Banner -->
 <div class="banner">
     <img src="./cmc-banner.png" alt="Center for Managing Change">
 </div>
